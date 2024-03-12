@@ -1,0 +1,16 @@
+[ req ]
+default_bits       = 4096
+distinguished_name = req_distinguished_name
+req_extensions     = req_ext
+prompt             = no
+
+[ req_distinguished_name ]
+commonName=*.dms.dev.usw2.ficoanalyticcloud.com
+
+[req_ext]
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = *.dms.dev.usw2.ficoanalyticcloud.com
+DNS.2 = *.dms.dev.usw2.ficoanalyticcloud.com
+DNS.3 = *.dms.dev.usw2.ficoanalyticcloud.com
